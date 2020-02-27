@@ -1,15 +1,50 @@
 <!DOCTYPE html>
+
 <head>
   <title>
     Website cabuloso
   </title>
   <script src="scripts/main.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
 </head>
+
 <body>
-  <h1>
-    Utilizado por mim, configurado por Deus
-  </h1>
-  <iframe src="https://vole.wtf/perfect-circle/" frameborder="1" width="800" height="600"></iframe>
+  <div class="container border border-secondary">
+    <h1>Utilizado por mim, configurado por Deus</h1>
+    <br>
+    <div class="row" >
+      <div class="col">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">ID do GTM</span>
+          </div>
+          <input type="text" id="gtmId" class="form-control" aria-label="ID do GTM" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <button class="btn btn-warning" id="gtmInject" type="button" onclick="inject()">Inject</button>
+      </div>
+      <div class="col">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Script URL</span>
+          </div>
+          <input type="text" class="form-control" id="scriptSrc" aria-label="Script URL" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Is Async </span>
+          </div>
+          <input type="text" class="form-control" aria-label="Async" aria-describedby="inputGroup-sizing-default" placeholder="true | false">
+        </div>
+        <button class="btn btn-warning" id="scriptAsync" type="button" onclick="load()">Load</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+  
+  </footer>
 </body>
-</html>
