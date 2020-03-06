@@ -12,24 +12,22 @@
 <body>
   <h1>Utilizado por mim, configurado por Deus</h1>
   <br />
-
-  <span>ID do GTM</span>
-
-  <input type="text" id="gtmId" />
+<div>Add GTM</div><br>
+  <input type="text" id="gtmId" placeholder="ID do GTM"/>
   <button id="gtmInject" type="button" onclick="inject()">
     Inject
   </button>
 
-  <br /><br />
+  <br /><br /><br>
   <div>
-    <span>Script URL</span>
-    <input type="text" id="scriptSrc" />
-    <br />
-
-    <span>Is Async </span>
-
-    <input type="text" placeholder="true | false" />
+    Inject script
   </div>
+  <br>
+  <div>
+    <input type="text" id="scriptSrc" placeholder="URL" />
+    <br />
+    <input type="text" placeholder="Async: true | false" />
+  </div><br>
   <button type="button" onclick="load()">
     Load
   </button>
