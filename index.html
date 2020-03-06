@@ -1,116 +1,49 @@
 <!DOCTYPE html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>
-    Website cabuloso
+    Testing Area
   </title>
   <script src="scripts/main.js"></script>
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous"
-  />
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-  <div class="container">
-    <h1>Utilizado por mim, configurado por Deus</h1>
-    <br />
-    <div class="row">
-      <div class="col">
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-default"
-              >ID do GTM</span
-            >
-          </div>
-          <input
-            type="text"
-            id="gtmId"
-            class="form-control"
-            aria-label="ID do GTM"
-            aria-describedby="inputGroup-sizing-default"
-          />
-        </div>
-        <button
-          class="btn btn-warning"
-          id="gtmInject"
-          type="button"
-          onclick="inject()"
-        >
-          Inject
-        </button>
-      </div>
-      <div class="col">
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-default"
-              >Script URL</span
-            >
-          </div>
-          <input
-            type="text"
-            class="form-control"
-            id="scriptSrc"
-            aria-label="Script URL"
-            aria-describedby="inputGroup-sizing-default"
-          />
-        </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-default"
-              >Is Async
-            </span>
-          </div>
-          <input
-            type="text"
-            class="form-control"
-            aria-label="Async"
-            aria-describedby="inputGroup-sizing-default"
-            placeholder="true | false"
-          />
-        </div>
-        <button
-          class="btn btn-warning"
-          id="scriptAsync"
-          type="button"
-          onclick="load()"
-        >
-          Load
-        </button>
-      </div>
-    </div>
-  </div>
-</body>
+  <h1>Utilizado por mim, configurado por Deus</h1>
+  <br />
 
-<footer>
-  <p>
-    Feito por mim, assegurado por mim também
-  </p>
-  <p>
-    É responsivo, de nada
-  </p>
-  <p>
-    Ao entrar nesse site, você aceita o uso de cookies. Caso não aceite, eu não ligo.
-  </p>
-  
-  <!--
-    <img class="img-fluid" src="./styles/images/coronga.png" alt="Fora Corona" width="600">
+  <span>ID do GTM</span>
+
+  <input type="text" id="gtmId" />
+  <button id="gtmInject" type="button" onclick="inject()">
+    Inject
+  </button>
+
+  <br /><br />
   <div>
-    <h3>
-      Lista de sites úteis:
-    </h3>
-    <div>
-      <a href="https://gepeto.ga?utm_source=me_paga&utm_medium=pelo_acesso">Site do Gepeto</a>
-    </div>
-    <div>
-      <a href="https://inhame.ga?utm_source=me_paga&utm_medium=pelo_acesso">Site do Inhame</a>
-    </div>
-    <div>
-      <a href="http://lilian.ga?utm_source=me_paga&utm_medium=pelo_acesso">Site da Lílian</a>
-    </div>
-  </div> -->
-</footer>
-</html>
+    <span>Script URL</span>
+    <input type="text" id="scriptSrc" />
+    <br />
+
+    <span>Is Async </span>
+
+    <input type="text" placeholder="true | false" />
+  </div>
+  <button type="button" onclick="load()">
+    Load
+  </button>
+
+  <div class="footer">
+    <p>
+      Feito por mim, assegurado por mim também
+    </p>
+    <p>
+      É responsivo, de nada
+    </p>
+    <p>
+      Ao entrar nesse site, você aceita o uso de cookies. Caso não aceite, eu
+      não ligo.
+    </p>
+  </footer>
+</body>
