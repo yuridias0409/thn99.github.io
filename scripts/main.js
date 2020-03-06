@@ -33,3 +33,12 @@ function load() {
   var ss = document.getElementsByTagName("script")[0];
   ss.parentNode.insertBefore(s, ss);
 }
+
+function appendLink(){
+  let divLink = document.getElementById("linkArea");
+  let link = document.createElement("a");
+  link.href = 'https://' + document.getElementById("url").value;
+  link.innerText = link.href + '\n';
+  divLink.append(link);
+  console.log(link.href)
+}
