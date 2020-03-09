@@ -1,4 +1,173 @@
-<html>
-  <head><title>Teste</title></head>
-  <body><h3>Teste</h3></body>
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Testes</title>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-151996084-1', 'auto');
+ga('send', 'pageview');
+      
+      
+    </script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151996084-1');
+</script>
+    
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MSC9H23');
+    </script>
+    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSC9H23" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="container"><br><br>
+    <div class="row">
+    <h3>Conversão - Google Analytics</h3>
+    </div>
+    <div class="row">
+    <button type="button" class="btn btn-success btn-lg btn3d btn-ec" onclick="buy()">Comprar uma compra bonita</button>
+    <button type="button" class="btn btn-primary btn-lg btn3d btn-ec" onclick="goto()">Comprar com pageview</button>
+    </div>
+    <div class="row">
+    <button type="button" class="btn btn-warning btn-lg btn3d btn-ec" onclick="uglyBuy()">Comprar uma compra feia</button>
+    </div>
+    <br><br>
+    <div class="row">
+    <h3>Conversão - Facebook</h3>
+    </div>
+    <div class="row">
+    <button type="button" class="btn btn-primary btn-lg btn3d btn-ec" onclick="fbPurchase()">Compra de Facebook</button>
+    </div><br><br>
+    <div class="row">
+    <h3>Conversão - Google Ads</h3>
+    </div>
+    <div class="row">
+    <button type="button" class="btn btn-secondary btn-lg btn3d btn-ec" onclick="adsPurchase()">Compra de Ads</button>
+    </div>
+    </div>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        
+        function goto(){ window.location.href = "./thanks.html" }
+
+        function buy() {
+
+            dataLayer.push({
+                'event': 'purchase',
+                'ecommerce': {
+                    'purchase': {
+                        'actionField': {
+                            'id': "C1RCC",
+                            'revenue': 0.99,
+                            'tax': 10,
+                            'shipping': 90
+                        },
+                        'products': [{
+                            'name': 'Tag Trainer',
+                            'id': '123',
+                            'price': 99,
+                            'quantity': 4,
+                            'category': 'Treinamentos',
+                            'Brand': 'Raccoon'
+                        }]
+                    }
+                }
+            });
+        };
+
+        function uglyBuy() {
+
+            dataLayer.push({
+                'event': 'uglyPurchase',
+                'ecommerce': {
+                    'purchase': {
+                        'actionField': {
+                            'id': "C1RCC",
+                            'revenue': 0.99,
+                            'tax': 10,
+                            'shipping': 90
+                        },
+                        'products': [{
+                            'name': 'Tag Trainer',
+                            'id': '123',
+                            'price': 99,
+                            'quantity': 4,
+                            'category': 'Treinamentos',
+                            'Brand': 'Raccoon'
+                        }]
+                    }
+                }
+            });
+        };
+        
+        function fbPurchase() {
+
+            dataLayer.push({
+                'event': 'fbPurchase',
+                'ecommerce': {
+                    'purchase': {
+                        'actionField': {
+                            'id': "C1RCC",
+                            'revenue': 10990.99,
+                            'tax': 10,
+                            'shipping': 90
+                        },
+                        'products': [{
+                            'name': 'Tag Trainer',
+                            'id': '123',
+                            'price': 999,
+                            'quantity': 4,
+                            'category': 'Treinamentos',
+                            'Brand': 'Raccoon'
+                        }]
+                    }
+                }
+            });
+        };
+        
+        function adsPurchase(){
+          dataLayer.push({
+            event: 'adsPurchase'
+          });
+        }
+    </script>
+    <div style="background-color: #000000; width: 100px;" class"col-md-6">
+
+    
+    </div>
+
+</body>
+
 </html>
