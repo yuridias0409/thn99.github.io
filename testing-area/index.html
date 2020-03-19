@@ -8,7 +8,7 @@
 <body>
 <h1>Área de testes</h1>
 <div>Add GTM</div><br>
-  <input type="text" id="gtmId" placeholder="ID do GTM"/>
+  <input type="text" id="gtmId" placeholder="ID do GTM"/><br><br>
   <button id="gtmInject" type="button" onclick="inject()">
     Inject
   </button>
@@ -20,11 +20,21 @@
   <br>
   <div>
     <input type="text" id="scriptSrc" placeholder="URL" />
-    <br />
+    
     <input type="text" id="scriptAsync" placeholder="Async: true | false" />
-  </div><br>
+  <br><br>
   <button type="button" onclick="load()">
     Load
   </button>
+</div>
+<br><br>
+<div>
+  Cross Domain Tester
+</div>
+<div><br>
+  <input type="text" id="url" placeholder="URL"><br><br>
+  <button type="button" onclick="appendLink()">Insert Link</button>
+</div><br><br>
+<div id="linkArea"></div>
   </body>
 </html>
