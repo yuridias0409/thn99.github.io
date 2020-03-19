@@ -41,8 +41,8 @@ function inject() {
 function load() {
   let s = document.createElement("script");
   s.src = document.querySelector("#scriptSrc").value;
-  s.async = document.querySelector("#scriptAsync").value.match(/false/gi) ? 0 : 1;
-  console.log(s);
+  s.async = document.querySelector("#scriptAsync").value;
+  console.log(document.querySelector("#scriptSrc").value);
   document.body.appendChild(s);
 }
 

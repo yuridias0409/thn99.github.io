@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <title>Testing Area</title>
+<meta name="viewport" content="width=device-width">
 <script src="../scripts/main.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="../styles/style.css">
 
 </head>
 <body>
+<h1>Área de testes</h1>
 <div>Add GTM</div><br>
   <input type="text" id="gtmId" placeholder="ID do GTM"/>
   <button id="gtmInject" type="button" onclick="inject()">
@@ -20,7 +22,7 @@
   <div>
     <input type="text" id="scriptSrc" placeholder="URL" />
     <br />
-    <input type="text" placeholder="Async: true | false" />
+    <input type="text" id="scriptAsync" placeholder="Async: true | false" />
   </div><br>
   <button type="button" onclick="load()">
     Load
