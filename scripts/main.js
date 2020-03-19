@@ -12,6 +12,18 @@
   f.parentNode.insertBefore(j, f);
 })(window, document, "script", "dataLayer", "GTM-KVRTNC8");
 
+/**
+ * GTAG Code
+ *  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-151996084-1');
+    </script> -->
+ */
+
 function inject() {
   let id = document.querySelector("#gtmId").value;
   (function(w, d, s, l, i) {
@@ -30,8 +42,8 @@ function load() {
   let s = document.createElement("script");
   s.src = document.querySelector("#scriptSrc").value;
   s.async = document.querySelector("#scriptAsync").value.match(/false/gi) ? 0 : 1;
-  var ss = document.getElementsByTagName("script")[0];
-  ss.parentNode.insertBefore(s, ss);
+  console.log(s);
+  document.body.appendChild(s);
 }
 
 function appendLink(){

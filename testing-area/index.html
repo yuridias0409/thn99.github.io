@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<title>Testing Area</title>
+<script src="../scripts/main.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="../styles/style.css">
+
+</head>
+<body>
+<div>Add GTM</div><br>
+  <input type="text" id="gtmId" placeholder="ID do GTM"/>
+  <button id="gtmInject" type="button" onclick="inject()">
+    Inject
+  </button>
+
+  <br /><br /><br>
+  <div>
+    Inject script
+  </div>
+  <br>
+  <div>
+    <input type="text" id="scriptSrc" placeholder="URL" />
+    <br />
+    <input type="text" placeholder="Async: true | false" />
+  </div><br>
+  <button type="button" onclick="load()">
+    Load
+  </button>
+  </body>
+</html>
