@@ -24,6 +24,9 @@
     </script> -->
  */
 
+window.purchaseItems = window.purchaseItems || [];
+
+
 function inject() {
   let id = document.querySelector("#gtmId").value;
   (function(w, d, s, l, i) {
@@ -54,3 +57,4 @@ function appendLink(){
   divLink.append(link);
   console.log(link.href)
 }
+
