@@ -50,11 +50,16 @@ function load() {
 }
 
 function appendLink(){
-  let divLink = document.getElementById("linkArea");
+  let tbodyLink = document.getElementById("linkArea");
   let link = document.createElement("a");
+  let colum = document.createElement("tr");
+  let row = document.createElement("td");
   link.href = 'https://' + document.getElementById("url").value;
   link.innerText = link.href + '\n';
-  divLink.append(link);
+  row.scope = 'row';
+  row.append(link);
+  colum.append(row);
+  tbodyLink.append(colum);
   console.log(link.href)
 }
 

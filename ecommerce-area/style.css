@@ -4,7 +4,7 @@
   margin: auto;
   text-align: center;
   font-family: arial;
-  
+  align-items: center;
 }
 
 .price {
@@ -12,16 +12,9 @@
   font-size: 22px;
 }
 
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+.original_price {
+  color: red;
+  font-size: 24px;
 }
 
 .card button:hover {

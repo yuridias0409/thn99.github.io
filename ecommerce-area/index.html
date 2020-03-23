@@ -1,38 +1,58 @@
 <html>
     <head>
-        <title>Best ecommerce</title>
+        <title>Pomarola Supermarket</title>
         <script src="../scripts/main.js"></script>
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     </head>
     <body>
-        <h1>Welcome to our E-commerce</h1>
-        <h4>We don't sell anything, please go away</h4>
-
-        <div class="card">
+        <div class='d-flex justify-content-center'>
+            <h1>Welcome to Pomarola's Supermarket</h1>
+        </div>
+        <br>
+        <div class='row'>
+            <div class='product card col-sm-2'>
                 <img src="../styles/images/pomarola.jpg" alt="Denim Jeans" style="width:100%">
-                <h1>Tailored Jeans</h1>
-                <p class="price">$19.99</p>
-                <p><button>Add to Cart</button></p>
-              
-              
-                    <img src="../styles/images/pomarola.jpg" alt="Denim Jeans" style="width:10%">
-                    <h1>Tailored Jeans</h1>
-                    <p class="price">$19.99</p>
-                    <p><button>Add to Cart</button></p>
-                  </div>
-
-        
-        <div class="footer">
-            <p>
-                Feito por mim, assegurado por mim também
-            </p>
-            <p>
-                É responsivo, de nada
-            </p>
-            <p>
-                Ao entrar nesse site, você aceita o uso de cookies. Caso não aceite, eu
-                não ligo.
-            </p>
+                <h1>Pomarola Tradicional Lata</h1>
+                <p class="price">$2.99</p>
+                <p><button class="btn btn-outline-dark">Add to Cart</button></p>
+            </div>
+            <div class='product card col-sm-2'>
+                <img src="../styles/images/pomarola2.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Pomarola Tradicional Caixa</h1>
+                <p class="price">$3.99</p>
+                <p><button class="btn btn-outline-dark">Add to Cart</button></p>
+            </div>    
+            <div class='product card col-sm-2'>
+                <img src="../styles/images/pomarola3.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Pomarola Tradicional</h1>
+                <strike><p class="original_price">$5.99</p></strike>
+                <p class="price">$1.99</p>
+                <p><button class="btn btn-outline-dark">Add to Cart</button></p>
+            </div>    
+            <div class='product card col-sm-2'>
+                <img src="../styles/images/pomarola4.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Pomarola Receitas</h1>
+                <strike><p class="original_price">$5.99</p></strike>
+                <p class="price">$0.99</p>
+                <p><button class="btn btn-outline-dark">Add to Cart</button></p>
+            </div>
+            <div class='product card col-sm-2'>
+                <img src="../styles/images/pomarola5.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Pomarola Receitas Caixa</h1>
+                <p class="price">$7.99</p>
+                <p><button class="btn btn-outline-dark">Add to Cart</button></p>
+            </div> 
+        </div>   
+        <br><br><br>
+        <div class="footer-copyright text-center py-6">
+            Feito por mim, assegurado por mim também! <br>
+            É responsivo, de nada<br>
+            Ao entrar nesse site, você aceita o uso de cookies. Caso não aceite, eu não ligo.
         </div>
     </body>
 </html>
